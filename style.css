@@ -193,7 +193,7 @@ body::-webkit-scrollbar{
     content: '';
     position: absolute;
     top: 35%;
-    left: 17%;
+    left: 16.5%;
     width: 150px;
     height: 150px;
     transform: scale(0.95); /* Increase or decrease the value to adjust the size of the border */
