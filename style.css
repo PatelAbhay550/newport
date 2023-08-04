@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+    background: #cfcbcb url('supporters blue.webp');
+        
+    background-position: left;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    height: 100vh;
+    /* Photo by <a href="https://unsplash.com/@donramxn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ramón Salinero</a> on <a href="https://unsplash.com/photos/vEE00Hx5d0Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu {
+    color: white;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.mnun {
+    font-size: 1.4vw;
+    cursor: pointer;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+.mnun:before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 5px;
+    background-color: #fff;
+    width: 0px;
+    border-radius: 15px;
+    transition: width 0.3s ease;
+}
+.mnun:hover::before{
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    padding-top: 12%;
+    text-align: center;
+    position: absolute;
+}
+
+.head h1 {
+    color: white;
+    font-size: 6.0vw;
+}
+.downarw{
+    width: 100%;
+    padding-top: 5.8%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.downarw i{
+    font-size: 8vw;
+    animation: jumpInfinite 1.5s infinite;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+}
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+/*Text Selection Color*/
+::selection {
+    background: #bdff00;
+    color: #000000;
+}
+
+::-moz-selection {
+    background: #bdff00;
+    color: #000000;
+}
+.botm{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.botm p{
+    font-size: 1.3vw;
+    padding: 0px 20px;
+}
+.mnuoptions{
+    color: white;
+    right: 1.3%;
+    position: absolute;
+    top: 5.6%;
+    overflow-x: hidden;
+    display: none;
+    animation: display .82s ease;
+}
+body::-webkit-scrollbar{
+    visibility: hidden;
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(13, 13, 13);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #bdff00;
+    border-radius: 1000px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  
+@keyframes display {
+    0%{
+        transform: translateY(-555px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.about{
+    width: 100%;
+    height: 100vh;
+
+}
+.about img{
+    width: 150px;
+    height: 150px;
+    scale: 0.75;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+.abcont{
+    padding-left: 35%;
+    margin-top: -15%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.abcont h1{
+    color: #bdff00;
+    text-decoration: underline #bdff00;
+}
+.abcont p{
+    color: white;
+    width: 60%;
+    font-size: 1.37rem;
+    line-height: 1.3;
+
+}
+.img{
+    position: relative;
+}
+.img::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 16.2%;
+    width: 150px;
+    height: 150px;
+    transform: scale(0.95); /* Increase or decrease the value to adjust the size of the border */
+    border: 2px solid white;
+    border-radius: 1px; /* To create a circular border, use a large value for border-radius */
+    box-sizing: border-box; /* Ensure the border is included in the element's total size */
+    pointer-events: none; /* Make sure the pseudo-element doesn't interfere with mouse events */
+  }
+  
